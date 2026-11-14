@@ -1,0 +1,3 @@
+- insert:
+    - id: contribution-heatmap
+      name: '@local/dsh-contribution-heatmap'

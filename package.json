@@ -1,0 +1,46 @@
+{
+  "name": "dsh-contribution-heatmap",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "GitHub-style AI contribution heatmap below the message composer",
+  "keywords": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "deepseek-harness",
+    "heatmap",
+    "contribution-graph",
+    "activity"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "scripts/smoke-test.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "AI contribution heatmap",
+    "description": "Draws a GitHub-style contribution heatmap on the blank home of a new conversation, just below the message composer. One calendar year per view with month captions, a Less–More legend, and a year switcher; hovering a day shows its changed lines, token usage, web searches, and Git commits, and the header totals the days and lines drawn so far. The host collects successful write/edit/apply_patch calls, token usage from committed assistant messages, successful web_search/web_fetch calls, and successful bash/pwsh commands that run git commit, then keeps the totals in a JSON file under the DSH home; the browser only caches the last response for a fast first paint. Calls made before the plugin was enabled are not counted, an overwrite counts the new file length, and changes made outside these tools are not observed.",
+    "detail": "docs/DETAIL.md"
+  }
+}

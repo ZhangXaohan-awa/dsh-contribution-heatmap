@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "AI 代码贡献热力图",
+    "description": "在新对话的空白主页、输入框正下方绘制一张 GitHub 风格贡献热力图：一次展示一个自然年，带月份标签、「少 - 多」图例和年份切换按钮；鼠标悬浮某天会显示当天的代码行数、Token 消耗、联网搜索次数和 Git 提交次数，标题栏汇总累计活跃天数与代码行数。Host 侧采集成功的 write/edit/apply_patch 调用、来自已提交 assistant 消息的 Token 用量、成功的 web_search/web_fetch 调用，以及成功执行 git commit 的 bash/pwsh 命令，并把汇总数据保存在 DSH 主目录下的 JSON 文件中；浏览器只缓存最近一次响应以加快首屏。插件启用之前的调用不会被统计，覆盖写入按新文件长度计入，绕过这些工具的改文件行为不会被记录。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}
